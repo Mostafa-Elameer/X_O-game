@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O-X-GAME</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <!-- section get name players  -->
+  <section class="namePlayers vh-100 d-flex justify-content-center align-items-center bg-section">
+    <div class="container bg-dark text-center w-75 shadow-lg rounded-5 p-5">
+      <div class="row row-cols-md-2 row-cols-1">
+        <form class="text-center py-1 py-md-5">
+          <p class="text-warning m-0 h1 mb-3 fw-bolder">X-O GAME</p>
+          <div class="text-center">
+            <input id="firstPlayer" class="w-100 p-2 my-3 rounded-3 fw-bold" type="text"
+              placeholder="First player for O" />
+          </div>
+          <div class="text-center">
+            <input id="secondPlayer" class="w-100 p-2 my-3 rounded-3 fw-bold" type="text"
+              placeholder="Second Player for X" />
+          </div>
+
+          <button type="button" id="start" class="mx-auto  bg-secondary  my-2 fw-bolder">
+            <span>PLAY NOW</span>
+          </button>
+        </form>
+
+        <div class=" py-2">
+          <img class="img-fluid rounded-5" src="imges/istockphoto-1792621675-612x612.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- scttion game -->
+  <section class="bg-img Game d-none vh-100 overflow-hidden py-3 justify-content-center align-items-center">
+    <div class="container  m-auto">
+      <div class="head bg-game py-1 my-2">
+        <div class="d-flex justify-content-center">
+          <span class="h1 text-warning fw-bolder">O X</span>
+          <p class="m-0 h1 mx-2 text-warning fw-bolder">Game</p>
+        </div>
+        <div class="text-center">
+          <p class="turn h4 fw-medium text-white"></p>
+        </div>
+      </div>
+
+      <!-- play Game -->
+      <div class="container p-5 bg-game shadow-lg rounded-3">
+        <div class="row row-cols-3 g-2">
+          <div class="">
+            <div class="p-2 item"></div>
+          </div>
+          <div class="">
+            <div class="p-2 item"></div>
+          </div>
+          <div class="">
+            <div class="p-2 item"></div>
+          </div>
+          <div class="">
+            <div class="p-2 item"></div>
+          </div>
+          <div class="">
+            <div class="p-2 item"></div>
+          </div>
+          <div class="">
+            <div class="p-2 item"></div>
+          </div>
+          <div class="">
+            <div class="p-2 item"></div>
+          </div>
+          <div class="">
+            <div class="p-2 item"></div>
+          </div>
+          <div class="">
+            <div class="p-2 item"></div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- section winer -->
+  <section id="win" class="d-none ">
+
+    <div class="m-auto  text-center">
+      <img class="img-fluid " src="imges/win.gif" alt="">
+    </div>
+
+
+  </section>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
